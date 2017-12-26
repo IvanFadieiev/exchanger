@@ -1,0 +1,35 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: saas_dev
+  pool: 5
+  username: postgres
+  password: ''
+  host: localhost
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: exchange_test
+  pool: 5
+  username: postgres
+  password: ''
+  host: localhost
+
+production:
+  adapter: postgresql
+  encoding: unicode
+  database: exchange_prod
+  pool: 5
+  username: postgres
+  password: ''
+  host: localhost
+
+staging:
+  adapter: postgresql
+  encoding: unicode
+  database: exchange_stag
+  pool: 5
+  username: postgres
+  password: ''
+  host: localhost
