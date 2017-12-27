@@ -2,10 +2,15 @@ source 'https://rubygems.org'
 ruby '2.4.1'
 gem 'rails', '5.1.2'
 
+gem 'active_record_bulk_insert'
+gem 'bootstrap-daterangepicker-rails'
 gem 'bootstrap-sass', '3.3.6'
+gem 'jquery-rails'
+gem 'momentjs-rails'
 gem 'pg', '0.18'
 gem 'puma', '~> 3.7'
 gem 'sass-rails', '5.0.6'
+gem 'twitter-bootstrap-rails', git: 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
 gem 'uglifier', '~> 2.7'
 
 group :development, :test do

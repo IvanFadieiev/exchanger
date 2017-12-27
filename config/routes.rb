@@ -1,3 +1,6 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  root 'exchange_data#index'
+
+  get '/fetch_data', to: 'exchange_data#fetch_data'
+  post '/data_selection', to: 'exchange_data#data_selection'
 end
