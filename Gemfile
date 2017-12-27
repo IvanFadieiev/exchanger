@@ -33,5 +33,6 @@ group :test do
   gem 'factory_girl'
   gem 'rails-controller-testing'
   gem 'rspec-rails', '3.6.0'
-  gem 'shoulda-matchers', '3.1.2', require: false
+  gem 'shoulda-matchers', '3.1.2'
+  gem 'webmock', require: 'webmock/rspec'
 end

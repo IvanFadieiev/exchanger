@@ -4,7 +4,7 @@ require 'csv'
 class DataFetchService
   class << self
     URL = 'http://sdw-wsrest.ecb.europa.eu/service/data/EXR/D.USD.EUR.SP00.A?format=csvdata'
-    FILE_PATH = Rails.root.join('public', 'data', 'currency_data.csv')
+    FILE_PATH = Rails.root.join('public', 'data', Rails.env, 'currency_data.csv')
 
     def call
       csv_get && save_to_db
