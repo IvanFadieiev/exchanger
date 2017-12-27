@@ -16,7 +16,9 @@ RSpec.describe ExchangeDatum, type: :model do
 
     before { create_records_list }
 
-    it { expect(days_between.size).to eq(size) }
+    context '.days_between' do
+      it { expect(days_between.size).to eq(size) }
+    end
 
     context '.convert(amount)' do
       subject(:converted_elem) { convert.first }
